@@ -1,0 +1,263 @@
+@font-face {
+    font-family: "league spartan";
+    src: url(fonts/LeagueSpartan-VariableFont_wght.ttf);
+}
+.page_title{
+    font-family: "league spartan", sans-serif;
+    font-size: 4em;
+    text-align: center;
+}
+a{
+    text-decoration: none;
+    color:white;
+}
+.navbar{
+    background-image: url("images/sprinkles.png");
+    font-family: "league spartan", sans-serif;
+    padding-left: 2em;
+    padding-right: 2em;
+    padding-bottom: 1em;
+    padding-top: 1em;
+}
+.navdiv{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.navdiv li{
+    list-style: none;
+    display: inline-block;
+    margin: none;
+}
+.navdiv li a{
+    color: white;
+    font-size: 1.3em;
+    font-weight: bold;
+    margin-right: 1.5em;
+}
+.navdiv div{
+    color: white;
+    font-weight: bolder;
+    font-size: 1.8em;   
+}
+.navdiv li a:hover{
+    text-decoration: underline;
+}   
+body{
+    margin: 0;
+}
+#countdown_container {
+    font-family: "league spartan", sans-serif;
+    padding: 40px;
+}
+#countdown_container h1{
+    font-family: "league spartan", sans-serif;
+    font-size: 3em;
+    margin-bottom: 30px;
+    text-align: center;
+}
+#countdown{
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+    min-width: 80px;
+}
+.time_unit {
+    display:flex;
+    flex-direction: column;
+    padding: 15px;
+    min-width: 80px;
+}
+.time_unit span:first-child {
+    font-size: 2.6em;
+    font-weight: bold;
+    color: black;
+}
+.time_unit span:last-child {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: grey;
+}
+#message{
+    font-size: 1.5em;
+    color: green;
+    font-weight: bolder;
+    text-align: center;
+}
+header p{
+    font-family: "league spartan", sans-serif;
+    margin-left: 4.3em;
+    
+}
+.blink_text{
+    animation: blinker 1s steps(1, end) infinite;
+}
+@keyframes blinker {
+    0% { opacity: 1; }
+        50% { opacity: 0; }
+        100% { opacity: 1; }
+}
+.header{
+    height: 150px;
+}
+.wish_image{
+    height: 170px;
+    border-radius: 15px;
+}
+.wish_item_rare{
+    color: white;
+    font-family: "league spartan", sans-serif;
+    position: relative;
+    border-radius: 25px;
+    text-align: center;
+    background-color: limegreen;
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-bottom: 30px;
+    padding-top: 20px;
+    width: 300px;
+    height: 300px;
+    transition: ease-in-out 0.2s;
+}
+.wish_item_rare:hover{
+    transform: scale(1.05); 
+}
+.rare_tag {
+    position: absolute; 
+    top: 10px; 
+    left: 10px; 
+    background-color: rgb(48, 161, 48); 
+    color: white;
+    font-family: "league spartan", sans-serif;
+    font-weight: bold;
+    padding: 5px 10px;
+    border-radius: 10px;
+    z-index: 10; 
+    font-size: 1.2em;
+    white-space: nowrap;
+}
+.rare_wish_grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 0px;
+    margin: 0px auto;
+    width: 90%;
+    justify-items: center;
+    max-width: 1200px;
+    padding: 50px;
+    justify-content: center;
+}
+.rare_wishes{
+    font-family: "league spartan", sans-serif;
+    text-align: center;
+}
+.wish_item_epic{
+    color: white;
+    font-family: "league spartan", sans-serif;
+    position: relative;
+    border-radius: 25px;
+    text-align: center;
+    background-color: rgb(173, 99, 213);
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-bottom: 30px;
+    padding-top: 20px;
+    width: 300px;
+    height: 300px;
+    transition: ease-in-out 0.2s;
+}
+.wish_item_epic:hover{
+    transform: scale(1.05); 
+}
+.epic_tag {
+    position: absolute; 
+    top: 10px; 
+    left: 10px; 
+    background-color: rgb(150, 91, 182); 
+    color: white;
+    font-family: "league spartan", sans-serif;
+    font-weight: bold;
+    padding: 5px 10px;
+    border-radius: 10px;
+    z-index: 10; 
+    font-size: 1.2em;
+    white-space: nowrap;
+}
+.epic_wish_grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 40px;
+    margin: 0px auto;
+    width: 90%;
+    justify-items: center;
+    max-width: 1200px;
+    padding: 50px;
+    justify-content: center;
+}
+.epic_wishes{
+    font-family: "league spartan", sans-serif;
+    text-align: center;
+}
+.wish_item_legendary{
+    color: white;
+    font-family: "league spartan", sans-serif;
+    position: relative;
+    border-radius: 25px;
+    text-align: center;
+    background-color: rgb(231, 199, 16);
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-bottom: 30px;
+    padding-top: 20px;
+    width: 300px;
+    height: 300px;
+    transition: ease-in-out 0.2s;
+}
+.wish_item_legendary:hover{
+    transform: scale(1.05); 
+}
+.legendary_tag {
+    position: absolute; 
+    top: 10px; 
+    left: 10px; 
+    background-color: goldenrod; 
+    color: white;
+    font-family: "league spartan", sans-serif;
+    font-weight: bold;
+    padding: 5px 10px;
+    border-radius: 10px;
+    z-index: 10; 
+    font-size: 1em;
+    white-space: nowrap;
+}
+.legendary_wish_grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 40px;
+    margin: 0px auto;
+    width: 90%;
+    justify-items: center;
+    max-width: 1200px;
+    padding: 50px;
+    justify-content: center;
+}
+.legendary_wishes{
+    font-family: "league spartan", sans-serif;
+    text-align: center;
+}
+body{
+    font-family: "league spartan", sans-serif;
+}
+#birthday_text{
+    font-size: 2.5em;
+    text-align: center;
+    margin-top: 0.5em;
+    width: 300px;
+}
+#starwars_image{
+    margin-left: auto;
+    margin-right: auto;
+    height: 30rem;
+    margin: 50px;
+    border-radius: 15px;
+}
